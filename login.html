@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Specifying Favorite Icon 16x16px for our page that appears in title bar of browser-->
+    <link rel="icon" href="images/favicon1.ico">
+    <title>eQuiz Login</title>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+  
+    <!-- Custom styles for login page -->
+    <link rel="stylesheet"  href="css/login.css" >
+  </head>
+  <body>
+    <div class="container">
+      <form class="form-signin" action="QuizServlet?op=1" method="post">
+        <h2 class="form-signin-heading">Login Here</h2>
+        <label for="userid" class="sr-only">User Id</label>
+        <input type="text" name="userid" id="userid" class="form-control" placeholder="Type Userid" required autofocus>
+        <label for="password" class="sr-only">Password</label>
+        <input type="password" name="password" id="password" class="form-control" placeholder="Password" required>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="remember-me"> Remember me
+          </label>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+        <a href="register_forgotten.jsp?op=2" class="btn" >Register Now</a>
+        <a href="register_forgotten.jsp?op=3" class="btn">Forgotten Password</a>
+            
+      </form>
+    </div> <!-- /container -->
+</body></html>
